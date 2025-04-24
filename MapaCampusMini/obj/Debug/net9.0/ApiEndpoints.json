@@ -1,0 +1,33 @@
+[
+  {
+    "ContainingType": "MapaCampusMini.Controllers.MapaController",
+    "Method": "ObtenerRuta",
+    "RelativePath": "Mapa/ruta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "origen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "destino",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
