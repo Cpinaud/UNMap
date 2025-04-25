@@ -1,0 +1,181 @@
+﻿@using System.Text.Json
+@using MapaCampusMini.Models
+@{
+    ViewData["Title"] = "Mapa de Aulas";
+    var nodos = ViewBag.Nodos as List<Nodo> ?? new List<Nodo>();
+    var ruta = ViewBag.Ruta as List<string> ?? new List<string>();
+}
+
+<h2>Plano de Aulas</h2>
+
+<form method="post" action="/MapaNew/CalcularRuta">
+    <label>
+        Origen:
+        <select name="origen">
+            @foreach (var n in nodos)
+            {
+                <option value="@n.Id">@n.Id</option>
+            }
+        </select>
+    </label>
+    <label>
+        Destino:
+        <select name="destino">
+            @foreach (var n in nodos)
+            {
+                <option value="@n.Id">@n.Id</option>
+            }
+        </select>
+    </label>
+    <button type="submit">Calcular Ruta</button>
+</form>
+
+
+<canvas id="mapaCanvas"
+        width="600"
+        height="400"
+        style="border:1px solid #333;"
+        data-nodos='@Html.Raw(JsonSerializer.Serialize(nodos))'
+        data-ruta='@Html.Raw(JsonSerializer.Serialize(ruta))'>
+</canvas>
+<button id="btnVolver" style="display:none; position:absolute; top:10px; right:10px;">Volver a localizarme</button>
+
+
+<script>
+    window.onload = function() {
+      const canvas = document.getElementById('mapaCanvas'),
+            ctx    = canvas.getContext('2d'),
+            R      = 50;
+
+      const nodos = JSON.parse(canvas.getAttribute('data-nodos')),
+            rutaOriginal = JSON.parse(canvas.getAttribute('data-ruta'));
+
+      let destinoFinal = rutaOriginal[rutaOriginal.length - 1];
+      let rutaActual = [...rutaOriginal];
+
+      ctx.font = '14px Arial';
+
+      function dibujarBase() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        nodos.forEach(n => {
+          ctx.beginPath();
+          ctx.arc(n.X, n.Y, 20, 0, 2 * Math.PI);
+          ctx.fillStyle = 'lightblue';
+          ctx.fill();
+          ctx.stroke();
+          ctx.fillStyle = 'black';
+          ctx.fillText(n.Id, n.X - 8, n.Y + 5);
+        });
+      }
+      // linea roja de ruta
+      function drawRoute(ruta) {
+        ctx.lineWidth = 4;
+        for (let i = 0; i < ruta.length - 1; i++) {
+          const a = nodos.find(n => n.Id === ruta[i]),
+                b = nodos.find(n => n.Id === ruta[i + 1]);
+          ctx.beginPath();
+          ctx.moveTo(a.X, a.Y);
+          ctx.lineTo(b.X, b.Y);
+          ctx.strokeStyle = 'red';
+          ctx.stroke();
+        }
+      }
+      // punto de ubicacion que manejo para referenciar la ubicacion 
+      function drawMarker(pos) {
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, 8, 0, 2 * Math.PI);
+        ctx.fillStyle = 'green';
+        ctx.fill();
+        ctx.stroke();
+      }
+      // con este calculo si estoy muy cerca de un nodo para dejar de tener en cuenta el otro anterior
+      function nodoCercano(pos, umbral = R) {
+        return nodos.find(n => {
+          const d = Math.hypot(n.X - pos.x, n.Y - pos.y);
+          return d < umbral;
+        });
+      }
+
+      function mostrarBotonVolver(nodo) {
+        const btn = document.getElementById('btnVolver');
+        btn.style.display = 'block';
+        btn.dataset.idNodo = nodo.Id;
+        btn.textContent = `Recalcular desde nodo ${nodo.Id}`;
+      }
+
+      function ocultarBotonVolver() {
+        document.getElementById('btnVolver').style.display = 'none';
+      }
+
+      
+      let userPos = null;
+      if (rutaOriginal.length > 0) {
+        const o = nodos.find(n => n.Id === rutaOriginal[0]);
+        userPos = { x: o.X, y: o.Y };
+      }
+
+      dibujarBase();
+      if (userPos) {
+        drawRoute(rutaActual);
+        drawMarker(userPos);
+      }
+
+     
+      canvas.addEventListener('click', e => {
+        const rect = canvas.getBoundingClientRect();
+        userPos = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+        dibujarBase();
+
+        const nodo = nodoCercano(userPos);
+        if (nodo) {
+          fetch('/MapaNew/RecalcularRuta', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              actual: nodo.Id,
+              destino: destinoFinal
+            })
+          })
+          .then(r => r.json())
+          .then(data => {
+            rutaActual = data.ruta;
+            drawRoute(rutaActual);
+            mostrarBotonVolver(nodo);
+          });
+        } else {
+          rutaActual = [...rutaOriginal];
+          drawRoute(rutaActual);
+          ocultarBotonVolver();
+        }
+
+        drawMarker(userPos);
+      });
+
+      // Este esta la posibilidad de que lo manejemos por proximidad o que el usuario tenga la capacidad que con un boton redirija
+      document.getElementById('btnVolver').addEventListener('click', () => {
+        const id = document.getElementById('btnVolver').dataset.idNodo;
+        fetch('/MapaNew/RecalcularRuta', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            actual: id,
+            destino: destinoFinal
+          })
+        })
+        .then(r => r.json())
+        .then(data => {
+          rutaActual = data.ruta;
+          const nodo = nodos.find(n => n.Id === id);
+          userPos = { x: nodo.X, y: nodo.Y };
+          dibujarBase();
+          drawRoute(rutaActual);
+          drawMarker(userPos);
+          ocultarBotonVolver();
+        });
+      });
+    };
+</script>
