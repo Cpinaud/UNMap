@@ -17,7 +17,7 @@ namespace MapaCampusMini.Controllers
         public IActionResult Index()
         {
             var nodos = _mapaService.ObtenerTodosLosNodos();
-        ViewBag.Nodos = nodos;
+            ViewBag.Nodos = nodos;
             return View();
         }
 

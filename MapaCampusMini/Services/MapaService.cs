@@ -1,4 +1,5 @@
 ﻿using MapaCampusMini.Models;
+using MapaCampusMini.Services.Interfaces;
 
 namespace MapaCampusMini.Services;
 
@@ -6,16 +7,9 @@ public class MapaService
 {
     private readonly Dictionary<string, Nodo> _nodos;
 
-    public MapaService()
+    public MapaService(ILecturaJsonService LecturaJsonService)
     {
-        _nodos = new()
-        {
-            ["A"] = new Nodo { Id = "A", X = 100, Y = 150, ConectadoCon = new() { ["B"] = 5, ["C"] = 10 } },
-            ["B"] = new Nodo { Id = "B", X = 300, Y = 100, ConectadoCon = new() { ["A"] = 5, ["D"] = 3 } },
-            ["C"] = new Nodo { Id = "C", X = 200, Y = 250, ConectadoCon = new() { ["A"] = 10, ["D"] = 4 } },
-            ["D"] = new Nodo { Id = "D", X = 400, Y = 200, ConectadoCon = new() { ["B"] = 3, ["C"] = 4, ["E"] = 2 } },
-            ["E"] = new Nodo { Id = "E", X = 500, Y = 300, ConectadoCon = new() { ["D"] = 2 } }
-        };
+        _nodos = LecturaJsonService.CargarNodosDesdeJson(); 
     }
 
     public List<Nodo> ObtenerTodosLosNodos()

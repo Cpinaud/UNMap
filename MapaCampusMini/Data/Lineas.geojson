@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Lineas",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": 108, "Longitud": 3.44, "Nodos": [ 108, 1108 ] }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -6519196.873205189593136, -4119109.488576073199511, 0.0 ], [ -6519193.730425928719342, -4119106.731147049926221, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "ID": 1070108, "Longitud": 4.93, "Nodos": [ 108, 1107 ] }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -6519193.730425928719342, -4119106.731147049926221, 0.0 ], [ -6519189.441119759343565, -4119110.931997623760253, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "ID": 107, "Longitud": 3.23, "Nodos": [ 107, 1107 ] }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -6519189.441119759343565, -4119110.931997623760253, 0.0 ], [ -6519192.501982060261071, -4119113.39545506099239, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "ID": 110, "Longitud": 3.93, "Nodos": [ 110, 1110 ] }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -6519202.314177489839494, -4119100.634994333144277, 0.0 ], [ -6519198.26170314848423, -4119103.163365390151739, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "ID": 1100108, "Longitud": 4.74, "Nodos": [ 1110, 1108 ] }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -6519198.26170314848423, -4119103.163365390151739, 0.0 ], [ -6519193.730425928719342, -4119106.731147049926221, 0.0 ] ] ] } }
+]
+}

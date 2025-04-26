@@ -32,9 +32,6 @@ C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\refint\MapaCampusMi
 C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.pdb
 C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.genruntimeconfig.cache
 C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\ref\MapaCampusMini.dll
-C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\bin\Debug\net9.0\frontend\package-lock.json
-C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\bin\Debug\net9.0\frontend\package.json
-C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\bin\Debug\net9.0\frontend\public\manifest.json
 C:\Users\nacho\Documents\GitHub\pruebaRutaUNMap\MapaCampusMini\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\nacho\Documents\GitHub\pruebaRutaUNMap\MapaCampusMini\bin\Debug\net9.0\appsettings.json
 C:\Users\nacho\Documents\GitHub\pruebaRutaUNMap\MapaCampusMini\bin\Debug\net9.0\MapaCampusMini.staticwebassets.endpoints.json
@@ -72,3 +69,7 @@ C:\Users\nacho\Documents\GitHub\pruebaRutaUNMap\MapaCampusMini\obj\Debug\net9.0\
 C:\Users\nacho\Documents\GitHub\pruebaRutaUNMap\MapaCampusMini\obj\Debug\net9.0\ref\MapaCampusMini.dll
 C:\Users\nacho\Documents\GitHub\pruebaRutaUNMap\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.RazorAssemblyInfo.cache
 C:\Users\nacho\Documents\GitHub\pruebaRutaUNMap\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.RazorAssemblyInfo.cs
+C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.RazorAssemblyInfo.cache
+C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.RazorAssemblyInfo.cs
+C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.sourcelink.json
+C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\bin\Debug\net9.0\Newtonsoft.Json.dll

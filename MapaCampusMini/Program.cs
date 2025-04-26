@@ -1,11 +1,15 @@
 using MapaCampusMini.Services;
+using MapaCampusMini.Models;
+using MapaCampusMini.Services.Interfaces;
 
 
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddScoped<ILecturaJsonService, LecturaJsonService>();
+builder.Services.AddScoped<MapaService>();
 builder.Services.AddOpenApi();
-builder.Services.AddSingleton<MapaService>();
+builder.Services.AddScoped<MapaService>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Nodos",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": 108, "Nombre": "Aula 108", "Tipo": "Aula", "Piso": 0, "Conexion": [ 1108 ] }, "geometry": { "type": "Point", "coordinates": [ -6519196.873205189593136, -4119109.488576073199511, 0.0 ] } },
+{ "type": "Feature", "properties": { "ID": 1108, "Nombre": "Conexion Aula 108", "Tipo": "Conexion", "Piso": 0, "Conexion": [ 1110, 108, 1107 ] }, "geometry": { "type": "Point", "coordinates": [ -6519193.730425928719342, -4119106.731147049926221, 0.0 ] } },
+{ "type": "Feature", "properties": { "ID": 110, "Nombre": "Aula 110", "Tipo": "Aula", "Piso": 0, "Conexion": [ 1110 ] }, "geometry": { "type": "Point", "coordinates": [ -6519202.314177489839494, -4119100.634994333144277, 0.0 ] } },
+{ "type": "Feature", "properties": { "ID": 1110, "Nombre": "Conexion Aula 110", "Tipo": "Conexion", "Piso": 0, "Conexion": [ 110, 1108 ] }, "geometry": { "type": "Point", "coordinates": [ -6519198.26170314848423, -4119103.163365390151739, 0.0 ] } },
+{ "type": "Feature", "properties": { "ID": 1107, "Nombre": "Conexion Aula 107", "Tipo": "Conexion", "Piso": 0, "Conexion": [ 1108, 107, 1106 ] }, "geometry": { "type": "Point", "coordinates": [ -6519189.441119759343565, -4119110.931997623760253, 0.0 ] } },
+{ "type": "Feature", "properties": { "ID": 107, "Nombre": "Aula 107", "Tipo": "Aula", "Piso": 0, "Conexion": [ 1107 ] }, "geometry": { "type": "Point", "coordinates": [ -6519192.501982060261071, -4119113.39545506099239, 0.0 ] } }
+]
+}
