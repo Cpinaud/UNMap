@@ -20,6 +20,12 @@ namespace MapaCampusMini.Controllers
             ViewBag.Nodos = nodos;
             return View();
         }
+        public IActionResult PleaseGodXd()
+        {
+            var nodos = _mapaService.ObtenerTodosLosNodos();
+            ViewBag.Nodos = nodos;
+            return View();
+        }
 
         [HttpPost]
         public IActionResult CalcularRuta(string origen, string destino)
@@ -27,7 +33,8 @@ namespace MapaCampusMini.Controllers
             var ruta = _mapaService.CalcularRuta(origen, destino);
             ViewBag.Nodos = _mapaService.ObtenerTodosLosNodos();
             ViewBag.Ruta = ruta;
-            return View("Index");
+            // return View("Index");
+            return View("PleaseGodXd");
         }
         [HttpPost]
         public JsonResult RecalcularRuta([FromBody] RequestRecRuta request)

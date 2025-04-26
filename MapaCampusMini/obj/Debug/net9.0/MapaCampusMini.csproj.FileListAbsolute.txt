@@ -73,3 +73,4 @@ C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.Razo
 C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.RazorAssemblyInfo.cs
 C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\obj\Debug\net9.0\MapaCampusMini.sourcelink.json
 C:\Users\Hp\Desktop\miniMapa\MapaCampusMini\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\nacho\Documents\GitHub\pruebaRutaUNMap\MapaCampusMini\bin\Debug\net9.0\Newtonsoft.Json.dll

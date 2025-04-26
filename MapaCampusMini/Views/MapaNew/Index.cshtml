@@ -153,7 +153,7 @@
         drawMarker(userPos);
       });
 
-      // Este esta la posibilidad de que lo manejemos por proximidad o que el usuario tenga la capacidad que con un boton redirija
+      
       document.getElementById('btnVolver').addEventListener('click', () => {
         const id = document.getElementById('btnVolver').dataset.idNodo;
         fetch('/MapaNew/RecalcularRuta', {

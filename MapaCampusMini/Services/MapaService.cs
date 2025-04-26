@@ -14,7 +14,13 @@ public class MapaService
 
     public List<Nodo> ObtenerTodosLosNodos()
     {
-        return _nodos.Values.ToList();
+        return _nodos
+            .Select(kv => {
+                var nodo = kv.Value;
+                nodo.Id = kv.Key;     
+                return nodo;
+            })
+            .ToList();
     }
 
     public Nodo? ObtenerNodoPorId(string id)
@@ -28,7 +34,7 @@ public class MapaService
         var anteriores = new Dictionary<string, string>();
         var nodosNoVisitados = new HashSet<string>(_nodos.Keys);
 
-        // Inicializar distancias a infinito, excepto el nodo inicial
+       
         foreach (var nodo in _nodos)
         {
             distancias[nodo.Key] = int.MaxValue;
@@ -37,7 +43,7 @@ public class MapaService
 
         while (nodosNoVisitados.Count > 0)
         {
-            // Obtener el nodo no visitado con la menor distancia conocida
+           
             var nodoActual = nodosNoVisitados.OrderBy(n => distancias[n]).First();
 
             // Si llegamos al destino, terminamos

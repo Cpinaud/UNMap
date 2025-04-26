@@ -1,0 +1,201 @@
+﻿@using System.Text.Json
+@using MapaCampusMini.Models
+@{
+    ViewData["Title"] = "Mapa de Aulas";
+    // nodos siempre vienen en ViewBag.Nodos
+    var nodosList = (List<Nodo>)ViewBag.Nodos;
+    // la ruta puede venir de ViewBag.Ruta (POST) o inicial
+    var rutaOriginal = ViewBag.Ruta as List<string> ?? new List<string>();
+    // preparar datos para JS
+    var jsNodos = nodosList.Select(n => new { id = n.Id, x = n.X, y = n.Y }).ToList();
+    var jsonNodos = JsonSerializer.Serialize(jsNodos);
+    var jsonRuta = JsonSerializer.Serialize(rutaOriginal);
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.css" />
+<script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+
+<h2>@ViewData["Title"]</h2>
+
+<form action="/MapaNew/CalcularRuta" method="post" class="mb-3">
+    <label>
+        Origen:
+        <select name="origen">
+            @foreach (var n in nodosList)
+            {
+                <option value="@n.Id">@n.Id</option>
+            }
+        </select>
+    </label>
+    <label class="ml-3">
+        Destino:
+        <select name="destino">
+            @foreach (var n in nodosList)
+            {
+                <option value="@n.Id">@n.Id</option>
+            }
+        </select>
+    </label>
+    <button type="submit" class="btn btn-primary ml-3">Calcular Ruta</button>
+</form>
+
+<div id="map" style="width:100%;height:500px;border:1px solid #ccc;"></div>
+<!-- botón volver debe existir en el DOM -->
+<button id="btnVolver" style="display:none; position:absolute; top:10px; right:10px;">Volver a nodo</button>
+
+<script type="text/javascript">
+    // datos desde servidor
+    const nodos           = @Html.Raw(jsonNodos);        // [{ id, x, y }, …]
+    const rutaOriginalArr = @Html.Raw(jsonRuta);         // [ '108','110', … ]
+    let rutaActual        = [...rutaOriginalArr];
+    const destinoFinal    = rutaOriginalArr.length>0
+                             ? rutaOriginalArr[rutaOriginalArr.length-1]
+                             : null;
+    const R = 50;  // metros de proximidad
+
+    // — Helpers para crear features —
+    function makeRouteFeature(arr){
+      const coords = arr.map(id=>{
+        const n = nodos.find(x=>x.id===id);
+        return [n.x,n.y];
+      });
+      const f = new ol.Feature({
+        geometry: new ol.geom.LineString(coords),
+        route: true
+      });
+      f.setStyle(new ol.style.Style({
+        stroke: new ol.style.Stroke({ color:'red', width:4 })
+      }));
+      return f;
+    }
+
+    function makeUserFeature(pt){
+      const f = new ol.Feature({
+        geometry: new ol.geom.Point([pt.x,pt.y]),
+        user: true
+      });
+      f.setStyle(new ol.style.Style({
+        image: new ol.style.Circle({
+          radius:6,
+          fill: new ol.style.Fill({ color:'green' }),
+          stroke: new ol.style.Stroke({ color:'white', width:2 })
+        })
+      }));
+      return f;
+    }
+
+    function makeCircleFeature(pt, radius){
+      const circleGeom = ol.geom.Polygon.circular(
+        ol.proj.get('EPSG:3857'),
+        [pt.x,pt.y],
+        radius,
+        64
+      );
+      const f = new ol.Feature({ geometry: circleGeom, area: true });
+      f.setStyle(new ol.style.Style({
+        stroke: new ol.style.Stroke({ color:'rgba(0,255,0,0.5)', width:2 }),
+        fill:   new ol.style.Fill({ color:'rgba(0,255,0,0.1)' })
+      }));
+      return f;
+    }
+
+    // — crear layer vectorial con nodos y ruta —
+    const nodeFeatures  = nodos.map(n=>{
+      const f = new ol.Feature({ geometry:new ol.geom.Point([n.x,n.y]), id:n.id });
+      f.setStyle(new ol.style.Style({
+        image:new ol.style.Circle({
+          radius:8,
+          fill: new ol.style.Fill({ color:'lightblue'}),
+          stroke: new ol.style.Stroke({ color:'navy', width:2})
+        }),
+        text:new ol.style.Text({ text:String(n.id), offsetY:-15, fill:new ol.style.Fill({color:'#000'}) })
+      }));
+      return f;
+    });
+
+    let routeFeature   = makeRouteFeature(rutaActual);
+    const vectorSource = new ol.source.Vector({ features:[...nodeFeatures, routeFeature] });
+    const vectorLayer  = new ol.layer.Vector({ source:vectorSource });
+
+    // — inicializar mapa —
+    const map = new ol.Map({
+      target: 'map',
+      layers: [
+        new ol.layer.Tile({ source:new ol.source.OSM() }),
+        vectorLayer
+      ],
+      view: new ol.View({
+        projection:'EPSG:3857',
+        center:[nodos[0].x, nodos[0].y],
+        zoom:20
+      })
+    });
+
+    // — búsqueda de nodo más cercano —
+    function nodoCercano(coord, umbral=R){
+      let nearest=null, dmin=Infinity;
+      nodos.forEach(n=>{
+        const dx=n.x-coord[0], dy=n.y-coord[1], d=Math.hypot(dx,dy);
+        if(d<dmin){ dmin=d; nearest=n; }
+      });
+      return dmin<umbral? nearest : null;
+    }
+
+    map.on('singleclick', evt=>{
+      const coord = evt.coordinate;
+
+     
+      vectorSource.getFeatures()
+        .filter(f=>f.get('user')||f.get('area'))
+        .forEach(f=>vectorSource.removeFeature(f));
+      vectorSource.removeFeature(routeFeature);
+
+      // dibujar círculo de proximidad
+      const circF = makeCircleFeature({x:coord[0],y:coord[1]}, R);
+      vectorSource.addFeature(circF);
+
+      const nodo = nodoCercano(coord, R);
+      if(nodo){
+    
+        fetch('/MapaNew/RecalcularRuta', {
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({ actual :nodo.id, destino:destinoFinal })
+        })
+        .then(r=>r.json())
+        .then(data=>{
+          rutaActual  = data.ruta;
+          routeFeature = makeRouteFeature(rutaActual);
+          vectorSource.addFeature(routeFeature);
+        });
+
+        const btn = document.getElementById('btnVolver');
+        btn.style.display='block';
+        btn.dataset.id = nodo.id;
+      } else {
+
+        rutaActual   = [];
+      }
+
+     
+      const userF = makeUserFeature({x:coord[0],y:coord[1]});
+      vectorSource.addFeature(userF);
+    });
+
+    // — botón “Volver” —
+    document.getElementById('btnVolver').addEventListener('click', ()=>{
+      const origen = document.getElementById('btnVolver').dataset.id;
+      fetch('/MapaNew/RecalcularRuta', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ actual: nodo.id, destino:destinoFinal })
+      })
+      .then(r=>r.json())
+      .then(data=>{
+        rutaActual = data.ruta;
+        vectorSource.removeFeature(routeFeature);
+        routeFeature = makeRouteFeature(rutaActual);
+        vectorSource.addFeature(routeFeature);
+        document.getElementById('btnVolver').style.display='none';
+      });
+    });
+</script>

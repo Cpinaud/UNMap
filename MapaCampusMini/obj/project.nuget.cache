@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yUqQpD5wPig=",
+  "dgSpecHash": "NLYEORi0fAE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hp\\Desktop\\miniMapa\\MapaCampusMini\\MapaCampusMini.csproj",
+  "projectFilePath": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\MapaCampusMini.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Hp\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "C:\\Users\\Hp\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
-    "C:\\Users\\Hp\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\nacho\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\nacho\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\nacho\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

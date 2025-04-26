@@ -12,7 +12,7 @@ namespace MapaCampusMini.Services
             //Inicializo el Dictionary de nodos
             var nodos = new Dictionary<string, Nodo>();
             //creo un nodo vacío para poder usarlo y cargar el Dictionary
-            var nodoObj = new Nodo();
+          //  var nodoObj = new Nodo();
 
             //Leo el json de nodos, lo parseo y guardo en nodosList la lista de nodos (prop features del json)
             var nodosJson = File.ReadAllText("Data/Nodos.geojson");
@@ -59,15 +59,18 @@ namespace MapaCampusMini.Services
                 }
 
                 //cargo el objeto Nodo y lo guardo en el diccionario
-                nodoObj.Id = id;
-                nodoObj.Nombre = Nombre;
-                nodoObj.Tipo = Tipo;    
-                nodoObj.Piso = Piso;
-                nodoObj.X = x;
-                nodoObj.Y = y;
-                nodoObj.ConectadoCon = ConectadoCon;
+                var nodoObj = new Nodo
+                {
+                    Id = id,
+                    Nombre = Nombre,
+                    Tipo = Tipo,
+                    Piso = Piso,
+                    X = x,
+                    Y = y,
+                    ConectadoCon = ConectadoCon
+                };
 
-                nodos.Add(id, nodoObj);
+                nodos[id] = nodoObj;
 
 
             }
