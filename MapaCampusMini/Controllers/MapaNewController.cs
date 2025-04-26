@@ -33,6 +33,9 @@ namespace MapaCampusMini.Controllers
             var ruta = _mapaService.CalcularRuta(origen, destino);
             ViewBag.Nodos = _mapaService.ObtenerTodosLosNodos();
             ViewBag.Ruta = ruta;
+            ViewBag.OrigenSeleccionado = origen;
+            ViewBag.DestinoSeleccionado = destino;
+
             // return View("Index");
             return View("PleaseGodXd");
         }

@@ -22,7 +22,7 @@
         <select name="origen">
             @foreach (var n in nodosList)
             {
-                <option value="@n.Id">@n.Id</option>
+                <option value="@n.Id" @(n.Id == (string)ViewBag.OrigenSeleccionado ? "selected" : "")>@n.Id</option>
             }
         </select>
     </label>
@@ -31,7 +31,7 @@
         <select name="destino">
             @foreach (var n in nodosList)
             {
-                <option value="@n.Id">@n.Id</option>
+                <option value="@n.Id" @(n.Id == (string)ViewBag.DestinoSeleccionado ? "selected" : "")>@n.Id</option>
             }
         </select>
     </label>
