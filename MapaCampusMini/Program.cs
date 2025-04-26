@@ -33,7 +33,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=MapaNew}/{action=Index}/{id?}");
+    pattern: "{controller=MapaNew}/{action=PleaseGodXd}/{id?}");
 
 app.Run(); 
 

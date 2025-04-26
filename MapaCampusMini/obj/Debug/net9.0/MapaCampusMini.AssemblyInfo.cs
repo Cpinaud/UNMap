@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MapaCampusMini")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b31b2c687aca67d49a375de64f375bed526b16ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+620df4335eba8d627fe4090a106fdcbd3f649f85")]
 [assembly: System.Reflection.AssemblyProductAttribute("MapaCampusMini")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MapaCampusMini")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
