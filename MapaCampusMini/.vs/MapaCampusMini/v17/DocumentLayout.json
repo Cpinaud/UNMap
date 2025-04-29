@@ -1,61 +1,63 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\",
+  "WorkspaceRootPath": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\mapacampusmini.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:mapacampusmini.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\controllers\\mapanewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\controllers\\mapanewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:controllers\\mapanewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\views\\mapanew\\pleasegodxd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:views\\mapanew\\pleasegodxd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\services\\lecturajsonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:services\\lecturajsonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\services\\mapaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:services\\mapaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\views\\mapanew\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:views\\mapanew\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\controllers\\mapacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\controllers\\mapacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:controllers\\mapacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Lineas.geoJson||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lineas.geoJson||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\models\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\services\\mapaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:services\\mapaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\mapacampusmini.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:mapacampusmini.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\views\\mapanew\\pleasegodxd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:views\\mapanew\\pleasegodxd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\services\\lecturajsonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:services\\lecturajsonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\views\\mapanew\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:views\\mapanew\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Lineas.geoJson||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\models\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:models\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\nacho\\documents\\github\\pruebarutaunmap\\mapacampusmini\\models\\requestrecruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|c:\\users\\44729038\\documents\\github\\unmap\\mapacampusmini\\models\\requestrecruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D59A71-B9C0-4670-A3B4-7AADAD983DDD}|MapaCampusMini.csproj|solutionrelative:models\\requestrecruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -66,7 +68,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +76,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Bookmark",
@@ -82,78 +84,93 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-26T03:57:40.403Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PleaseGodXd.cshtml",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Views\\MapaNew\\PleaseGodXd.cshtml",
-              "RelativeDocumentMoniker": "Views\\MapaNew\\PleaseGodXd.cshtml",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Views\\MapaNew\\PleaseGodXd.cshtml",
-              "RelativeToolTip": "Views\\MapaNew\\PleaseGodXd.cshtml",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAKUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T02:30:24.895Z",
+              "Title": "MapaCampusMini",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\MapaCampusMini.csproj",
+              "RelativeDocumentMoniker": "MapaCampusMini.csproj",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\MapaCampusMini.csproj",
+              "RelativeToolTip": "MapaCampusMini.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-29T17:32:18.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "Microsoft.NET.TargetFrameworkInference.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAmwKoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-04-29T17:30:19.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MapaNewController.cs",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Controllers\\MapaNewController.cs",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Controllers\\MapaNewController.cs",
               "RelativeDocumentMoniker": "Controllers\\MapaNewController.cs",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Controllers\\MapaNewController.cs",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Controllers\\MapaNewController.cs",
               "RelativeToolTip": "Controllers\\MapaNewController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAowBYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T02:25:52.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LecturaJsonService.cs",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Services\\LecturaJsonService.cs",
-              "RelativeDocumentMoniker": "Services\\LecturaJsonService.cs",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Services\\LecturaJsonService.cs",
-              "RelativeToolTip": "Services\\LecturaJsonService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwA4AAAAOAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAADgvywAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T02:20:01.73Z",
+              "WhenOpened": "2025-04-14T23:35:36.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Lineas.geoJson",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Lineas.geoJson",
-              "RelativeDocumentMoniker": "Lineas.geoJson",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Lineas.geoJson",
-              "RelativeToolTip": "Lineas.geoJson",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-26T00:29:39.626Z"
+              "DocumentIndex": 1,
+              "Title": "MapaController.cs",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Controllers\\MapaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MapaController.cs",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Controllers\\MapaController.cs",
+              "RelativeToolTip": "Controllers\\MapaController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T02:41:45.844Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
+              "Title": "MapaService.cs",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Services\\MapaService.cs",
+              "RelativeDocumentMoniker": "Services\\MapaService.cs",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Services\\MapaService.cs",
+              "RelativeToolTip": "Services\\MapaService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T02:42:32.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Nodo.cs",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Models\\Nodo.cs",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Models\\Nodo.cs",
               "RelativeDocumentMoniker": "Models\\Nodo.cs",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Models\\Nodo.cs",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Models\\Nodo.cs",
               "RelativeToolTip": "Models\\Nodo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -161,75 +178,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MapaService.cs",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Services\\MapaService.cs",
-              "RelativeDocumentMoniker": "Services\\MapaService.cs",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Services\\MapaService.cs",
-              "RelativeToolTip": "Services\\MapaService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T02:42:32.684Z",
-              "EditorCaption": ""
+              "DocumentIndex": 10,
+              "Title": "Lineas.geoJson",
+              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Lineas.geoJson",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Lineas.geoJson",
+              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Lineas.geoJson",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Lineas.geoJson",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-26T00:29:39.626Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "MapaController.cs",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Controllers\\MapaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MapaController.cs",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Controllers\\MapaController.cs",
-              "RelativeToolTip": "Controllers\\MapaController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Title": "LecturaJsonService.cs",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Services\\LecturaJsonService.cs",
+              "RelativeDocumentMoniker": "Services\\LecturaJsonService.cs",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Services\\LecturaJsonService.cs",
+              "RelativeToolTip": "Services\\LecturaJsonService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T02:41:45.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T02:20:01.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T23:35:36.414Z",
-              "EditorCaption": ""
+              "DocumentIndex": 7,
+              "Title": "PleaseGodXd.cshtml",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Views\\MapaNew\\PleaseGodXd.cshtml",
+              "RelativeDocumentMoniker": "Views\\MapaNew\\PleaseGodXd.cshtml",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Views\\MapaNew\\PleaseGodXd.cshtml",
+              "RelativeToolTip": "Views\\MapaNew\\PleaseGodXd.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAKUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T02:30:24.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-25T02:16:04.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MapaCampusMini.http",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\MapaCampusMini.http",
-              "RelativeDocumentMoniker": "MapaCampusMini.http",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\MapaCampusMini.http",
-              "RelativeToolTip": "MapaCampusMini.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-24T22:39:38.989Z",
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-26T03:57:40.403Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-04-25T02:16:04.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -237,24 +249,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Views\\MapaNew\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Views\\MapaNew\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\MapaNew\\Index.cshtml",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Views\\MapaNew\\Index.cshtml",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Views\\MapaNew\\Index.cshtml",
               "RelativeToolTip": "Views\\MapaNew\\Index.cshtml",
               "ViewState": "AgIAAJQAAAAAAAAAAAAAAJ4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T22:49:00.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T22:49:00.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "RequestRecRuta.cs",
-              "DocumentMoniker": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Models\\RequestRecRuta.cs",
+              "DocumentMoniker": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Models\\RequestRecRuta.cs",
               "RelativeDocumentMoniker": "Models\\RequestRecRuta.cs",
-              "ToolTip": "C:\\Users\\nacho\\Documents\\GitHub\\pruebaRutaUNMap\\MapaCampusMini\\Models\\RequestRecRuta.cs",
+              "ToolTip": "C:\\Users\\44729038\\Documents\\Github\\UNMap\\MapaCampusMini\\Models\\RequestRecRuta.cs",
               "RelativeToolTip": "Models\\RequestRecRuta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

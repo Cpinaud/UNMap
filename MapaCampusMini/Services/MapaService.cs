@@ -3,7 +3,15 @@ using MapaCampusMini.Services.Interfaces;
 
 namespace MapaCampusMini.Services;
 
-public class MapaService
+
+public interface IMapaService
+{
+    List<Nodo> ObtenerTodosLosNodos();
+    Nodo? ObtenerNodoPorId(string id);
+    List<string> CalcularRuta(string origen, string destino);
+}
+
+public class MapaService : IMapaService
 {
     private readonly Dictionary<string, Nodo> _nodos;
 

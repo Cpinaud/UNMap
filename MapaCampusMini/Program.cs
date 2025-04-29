@@ -5,19 +5,31 @@ using MapaCampusMini.Services.Interfaces;
 
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddScoped<ILecturaJsonService, LecturaJsonService>();
-builder.Services.AddScoped<MapaService>();
-builder.Services.AddOpenApi();
-builder.Services.AddScoped<MapaService>();
 
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddScoped<IMapaService, MapaService>();
+builder.Services.AddScoped<ILecturaJsonService, LecturaJsonService>();
+builder.Services.AddControllers();
 builder.Services.AddControllersWithViews();
 
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:3000") 
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
+
 
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
-    app.UseCors();
 }
 else
 {
@@ -27,13 +39,9 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
-app.UseRouting();
+app.UseRouting();    
+app.UseCors();       
 app.UseAuthorization();
+app.MapControllers();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=MapaNew}/{action=PleaseGodXd}/{id?}");
-
-app.Run(); 
-
+app.Run();

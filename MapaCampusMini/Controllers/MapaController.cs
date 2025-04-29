@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace MapaCampusMini.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("Mapa")]
 public class MapaController : ControllerBase
 {
-    private readonly MapaService _mapaService;
+    private readonly IMapaService _mapaService;
 
     public MapaController(MapaService mapaService)
     {

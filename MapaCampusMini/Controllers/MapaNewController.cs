@@ -5,45 +5,45 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MapaCampusMini.Controllers
 {
-    public class MapaNewController : Controller
+    [ApiController]
+    [Route("MapaNew")]
+    public class MapaNewController : ControllerBase
     {
 
-        private readonly MapaService _mapaService;
-        public MapaNewController(MapaService mapaService)
+        private readonly IMapaService _mapaService;
+        public MapaNewController(IMapaService mapaService)
         {
             _mapaService = mapaService;
         }
 
-        public IActionResult Index()
+       
+        [HttpGet("ObtenerNodos")]
+        public IActionResult ObtenerNodos()
         {
             var nodos = _mapaService.ObtenerTodosLosNodos();
-            ViewBag.Nodos = nodos;
-            return View();
-        }
-        public IActionResult PleaseGodXd()
-        {
-            var nodos = _mapaService.ObtenerTodosLosNodos();
-            ViewBag.Nodos = nodos;
-            return View();
+            
+            return new JsonResult(nodos);
         }
 
-        [HttpPost]
+        [HttpPost("CalcularNodo")]
         public IActionResult CalcularRuta(string origen, string destino)
         {
             var ruta = _mapaService.CalcularRuta(origen, destino);
-            ViewBag.Nodos = _mapaService.ObtenerTodosLosNodos();
-            ViewBag.Ruta = ruta;
-            ViewBag.OrigenSeleccionado = origen;
-            ViewBag.DestinoSeleccionado = destino;
-
-            // return View("Index");
-            return View("PleaseGodXd");
+            var nodos = _mapaService.ObtenerTodosLosNodos();
+            var response = new
+            {
+                Nodos = nodos,
+                Ruta = ruta,
+                OrigenSeleccionado = origen,
+                DestinoSeleccionado = destino
+            };
+            return new JsonResult(response);
         }
-        [HttpPost]
+        [HttpPost("RecalcularRuta")]
         public JsonResult RecalcularRuta([FromBody] RequestRecRuta request)
         {
             var nuevaRuta = _mapaService.CalcularRuta(request.Actual, request.Destino);
-            return Json(new { ruta = nuevaRuta });
+            return new JsonResult(new { ruta = nuevaRuta });
         }
 
 
